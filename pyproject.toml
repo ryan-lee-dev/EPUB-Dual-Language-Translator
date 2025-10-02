@@ -1,0 +1,20 @@
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.uv.pip]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[project]
+name = "EPUB-Dual-Language-Translator"
+version = "0.1.0"
+description = "EPUB Bilingual Translator is an intelligent tool designed for EPUB eBooks that provides bilingual translations, keeping the original text alongside the translated version for a seamless reading experience."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "lxml>=6.0.2",
+    "openai>=1.109.1",
+    "python-dotenv>=1.1.1",
+    "tqdm>=4.67.1",
+]

@@ -1,0 +1,8 @@
+*.log
+.tmp/*
+*.pyc
+**/tmp
+**/.venv
+test_data/*
+**/.env
+**/.epub
