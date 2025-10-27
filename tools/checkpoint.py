@@ -86,9 +86,7 @@ class Checkpoint:
         self.epub_path = epub_path
         self.output_dir = os.path.dirname(self.epub_path)
         self.file_name: str = os.path.basename(self.epub_path)
-        self.extract_dir: str = (
-            f"{self.output_dir}\\tmp\\{self.file_name.split(".")[0].replace(" ",'')}"
-        )
+        self.extract_dir: str = os.path.join(self.output_dir, "tmp", self.file_name.split(".")[0].replace(" ",''))
         self.force = force
         self.data = {"files": {}}
         self.checkpoint_file = f"{self.epub_path}.json"
